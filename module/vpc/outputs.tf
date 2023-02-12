@@ -1,11 +1,11 @@
 output "network" {
-  value       = google_compute_network.vpc.id
+  value       = google_compute_network.vpc.self_link
   description = "The VPC will be used for other modules"
 }
 
 #===========================OUTPUTS FOR GKE ===============================#
 output "private_subnet" {
-  value = google_compute_subnetwork.subnet[var.public_subnet_count]
+  value = google_compute_subnetwork.subnet[var.public_subnet_count].self_link
 }
 
 output "first_private_subnet_private_google_ip_access" {
