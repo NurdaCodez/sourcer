@@ -21,7 +21,7 @@ resource "google_container_cluster" "app_cluster" {
   }
   network                    = var.network
   subnetwork                 = var.subnet_name
-
+  tags = var.tags 
   logging_service            = "logging.googleapis.com/kubernetes"
   monitoring_service         = "monitoring.googleapis.com/kubernetes"
   maintenance_policy {
