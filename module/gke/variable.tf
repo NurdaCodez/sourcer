@@ -72,3 +72,7 @@ variable "depends_on_subnetwork" {
   description = "GKE depends on subnet creation"
   
 }
+
+variable "tags" {
+description = "tags for environment"  
+}
