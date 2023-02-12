@@ -73,6 +73,4 @@ variable "depends_on_subnetwork" {
   
 }
 
-variable "tags" {
-description = "tags for environment"  
-}
+
